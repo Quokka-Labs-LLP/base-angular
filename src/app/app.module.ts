@@ -4,6 +4,9 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './modules/auth/auth.component';
+import { MaterialModuleModule } from './shared-modules/shared-module/material-module/material-module.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -12,8 +15,11 @@ import { AuthComponent } from './modules/auth/auth.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModuleModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
